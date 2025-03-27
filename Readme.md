@@ -1,15 +1,15 @@
-
 # Digital Library Book Management System
 
 ## Objective
-This project is a command-line application designed to help librarians efficiently manage books, including adding, updating, searching, and deleting records while tracking their availability status.
+This project is a command-line application designed to help librarians efficiently manage books, including adding, updating, searching, and deleting records while tracking their availability status. It ensures data integrity with strict validation rules to prevent errors.
 
 ## Features
-- **Add a Book**: Enter book details and store them.
+- **Add a Book**: Enter book details and store them with validation checks.
 - **View All Books**: Display a list of all books.
 - **Search by ID or Title**: Find books using their ID or title.
 - **Update Book Details**: Modify book information, including availability status.
 - **Delete a Book**: Remove a book from the system.
+- **Data Validation**: Ensures book ID is unique, fields are non-empty, and availability status is valid.
 - **Exit System**: Safely close the application.
 
 ## Project Structure
@@ -43,7 +43,6 @@ DigitalLibrarySystem/
 - **Main Class**: Starts the application and shows the main menu.
 - **Test**: Unit tests for the LibraryService class.
 
-
 ## Setup and Run Instructions
 ### Prerequisites
 - Java 8 or later
@@ -70,19 +69,17 @@ To run the test cases, execute:
 mvn test
 ```
 
-## Error Handling & Constraints
-- Book ID must be unique.
-- Title and Author cannot be empty.
-- Availability status must be `AVAILABLE` or `CHECKED_OUT`.
-- Exception handling ensures robustness against invalid inputs.
+## Data Validation & Error Handling
+- **Book ID must be unique**: Duplicate entries are not allowed.
+- **Title and Author cannot be empty**: Ensures meaningful book records.
+- **Availability status must be `AVAILABLE` or `CHECKED_OUT`**.
+- **Exception handling ensures robustness against invalid inputs.**
 
-## Reflection
-During the development process, the focus was on modular design and adherence to OOPS principles. Strictly according to the CODE EVALUATION CRITERIA mentioned in the given document the development was done.
-
-It the more time has given  the enhancements can be done, which can include:
-- Database integration for persistence. Could be Sql or No-Sql.
-- Web-based UI for better usability. Spring Boot 
-- Role-based access control. Authorization and Authentication
+## Future Enhancements
+If given more time, the following enhancements can be implemented:
+- **Database Integration**: Store book records in SQL or NoSQL databases.
+- **Web-based UI**: Develop a Spring Boot application for better usability.
+- **Role-based Access Control**: Implement authentication and authorization.
 
 ---
-Developed by: * Mayank Bhargava *
+Developed by: **Mayank Bhargava**
