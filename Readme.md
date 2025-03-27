@@ -52,7 +52,7 @@ DigitalLibrarySystem/
 ### Steps to Run
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Mayank260901/Digital-Library-Management-System.git
    cd DigitalLibrarySystem
    ```
 2. Compile and package the application:
